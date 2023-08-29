@@ -4,6 +4,7 @@ import { useDrag } from "./useDrag";
 import { useResize } from "./useResize";
 import { Dimensions } from "../Types";
 import { PropsWithChildren } from "preact/compat";
+import { useStacking } from "./useStacking";
 
 interface Props {
   title?: string;
@@ -30,6 +31,8 @@ export function Window(props: PropsWithChildren<Props>) {
 
   const dragState = isMovable && useDrag(windowRef, titlebarRef);
   const resizeState = isResizable && useResize(windowRef, resizeHandleRef);
+
+  useStacking(windowRef);
 
   return (
     <div

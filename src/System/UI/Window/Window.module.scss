@@ -40,6 +40,10 @@
       background: #f1f1f1;
       width: 100%;
       height: calc(100% - 2.1em);
+
+      * {
+        font-family: OS_UI;
+      }
     }
 
     .buttons {
@@ -90,7 +94,7 @@
     }
 
     .buttons .close {
-      background: linear-gradient(#f39377, #dc4e1b);
+      background: linear-gradient(#7C9535, #38541F);
       width: 32px;
     }
 
