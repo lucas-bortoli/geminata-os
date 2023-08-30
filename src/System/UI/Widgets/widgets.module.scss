@@ -151,3 +151,18 @@
     padding: 0.2em 0.4em;
   }
 }
+
+//#endregion
+
+//#region Link
+
+.link, link:visited {
+  color: #38541F;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #7C9535;
+}
+
+//#endif

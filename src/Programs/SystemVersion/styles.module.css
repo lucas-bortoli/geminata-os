@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .imageContainer {
@@ -12,15 +13,15 @@
   border-style: solid;
   border-image: linear-gradient(90deg, #7c9535 0%, #38541f 50%, #7c9535 100%) 30;
   background-color: #34431f;
-  height: 96px;
+  height: 128px;
 }
 
-.logoMain,
-.logoShadow {
+.logoMain {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 48px;
+  height: 96px;
+  pointer-events: none;
 }
 
 .logoMain {
@@ -30,12 +31,12 @@
 
 .content {
   flex-grow: 1;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .buttons {
   display: flex;
   justify-content: end;
   gap: 0.5rem;
-  padding: 0 4rem 1rem 4rem;
+  padding: 0 2rem 1rem 2rem;
 }
